@@ -393,7 +393,6 @@ function autoUpdateStats(p, item) {
         calcHP(pokeObj);
         calcStats(pokeObj);
         abilityObj.change();
-        itemObj.change();
     }
 }
 
