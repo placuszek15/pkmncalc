@@ -373,6 +373,7 @@ function autoUpdateStats(p, item) {
     var pokeObj = $(p);
     console.log(pokeObj)
     var abilityObj = pokeObj.find(".ability");
+    var itemObj = pokeObj.find(".item");
     var pokemon = pokedex[pokemonName];
     if (pokemon) {
         if (megaDelta[item] && megaDelta[item].skip.indexOf(pokemonName) < 0) { //change stats based on mega stone
@@ -389,6 +390,10 @@ function autoUpdateStats(p, item) {
             pokeObj.find(".weight").val(pokemon.w);
             pokeObj.find(".type2").val(pokemon.t2);
         } 
+        calcHP(pokeObj);
+        calcStats(pokeObj);
+        abilityObj.change();
+        itemObj.change();
     }
 }
 
