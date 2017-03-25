@@ -2182,6 +2182,9 @@ var SETDEX_SM = {
 		"LC SubSeeder": {"level":5,"evs":{"sd":196,"df":132,"hp":172},"nature":"Careful","ability":"Harvest","item":"Oran Berry","moves":["Substitute","Leech Seed","Will-O-Wisp","Horn Leech"]},
 		"LC Attacker": {"level":5,"evs":{"sd":116,"df":132,"at":196,"hp":12,"sp":52},"nature":"Adamant","ability":"Natural Cure","item":"Eviolite","moves":["Horn Leech","Shadow Claw","Rock Slide","Substitute"]},
 	},
+	"Pheromosa": {
+		"MnM Lucarionite": {"level":100,"evs":{"at":252,"sa":4,"sp":252},"nature":"Naive","ability":"Beast Boost","item":"Lucarionite","moves":["U-turn","Ice Beam","Focus Blast","Bug Buzz"]},
+	},
 	"Phione": {
 		"PU Rain Support": {"level":100,"evs":{"sd":4,"df":252,"hp":252},"ivs":{"sp":0},"nature":"Relaxed","ability":"Hydration","item":"Damp Rock","moves":["Rain Dance","Rest","Scald","U-turn"]},
 	},
