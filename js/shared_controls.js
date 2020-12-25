@@ -230,7 +230,7 @@ function autoUpdateStats(p, item) {
 			}
 			// pokeObj.find(".weight").val(1000);
 			// pokeObj.find(".weightkg").val(500);
-			pokeObj.forEach(andyboy);
+			// pokeObj.forEach(andyboy);
 			// var andy = pokeObj.keys
 			// while (true)
 			// 	console.log(andy.next().value());
