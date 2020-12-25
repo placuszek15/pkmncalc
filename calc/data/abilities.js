@@ -277,11 +277,17 @@ var SM = XY.concat([
     'Water Compaction',
     'Wimp Out',
 ]);
-var SS = SM.concat([
+const SS = SM.concat([
+    'As One (Glastrier)',
+    'As One (Spectrier)',
     'Ball Fetch',
+    'Chilling Neigh',
     'Cotton Down',
+    'Curious Medicine',
     'Dauntless Shield',
+    'Dragon\'s Maw',
     'Gorilla Tactics',
+    'Grim Neigh',
     'Gulp Missile',
     'Hunger Switch',
     'Ice Face',
@@ -296,14 +302,17 @@ var SS = SM.concat([
     'Power Spot',
     'Propeller Tail',
     'Punk Rock',
+    'Quick Draw',
     'Ripen',
     'Sand Spit',
     'Screen Cleaner',
     'Stalwart',
     'Steam Engine',
     'Steely Spirit',
+    'Transistor',
+    'Unseen Fist',
     'Wandering Spirit',
-]);
+  ]);
 exports.ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS];
 var Abilities = (function () {
     function Abilities(gen) {
