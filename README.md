@@ -4,9 +4,7 @@ Maldyboy's MnM Damage Calculator based off of:
 
 https://github.com/smogon/damage-calc
 
-## Current Issues
-- Missing some Crown Tundra Mons
-- Weight isn't changing
+## Current Known Issues
 
 ## Changelog
 |Date|Change|
