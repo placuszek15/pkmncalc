@@ -253,7 +253,15 @@ function autoUpdateStats(p, item) {
             // pokeObj.find(".weight").val(pokemon.w);
 		    // pokeObj.find(".type2").val(pokemon.t2);
 			pokeObj.find(".type2").val(pokemon.types[1]);
-            abilityObj.val(pokemon.ability);
+			
+			var randset = $("#randoms").prop("checked") ? randdex[pokemonName] : undefined;
+			var regSets = pokemonName in setdex && setName in setdex[pokemonName];
+			var set = regSets ? setdex[pokemonName][setName] : randset;
+			var abilityFallback = (typeof pokemon.abilities !== "undefined") ? pokemon.abilities[0] : "";
+			if (typeof set !== 'undefined')
+				setSelectValueIfValid(abilityObj, set.ability, abilityFallback);
+			else
+            	abilityObj.val(abilityFallback);
         } 
         calcHP(pokeObj);
         calcStats(pokeObj);
