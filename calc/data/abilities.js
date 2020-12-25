@@ -277,7 +277,7 @@ var SM = XY.concat([
     'Water Compaction',
     'Wimp Out',
 ]);
-const SS = SM.concat([
+var SS = SM.concat([
     'As One (Glastrier)',
     'As One (Spectrier)',
     'Ball Fetch',
