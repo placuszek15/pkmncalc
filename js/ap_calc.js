@@ -379,7 +379,7 @@ var megaDelta = {
     'Mewtwonite Y':{'at':40, 'df':-20, 'sa':40, 'sd':20, 'sp':10, 'weight':-89, 'ability': 'Insomnia', 'type': '', 'skip': ['Mewtwo-Mega-Y']},
     'Pidgeotite':{'at':0, 'df':5, 'sa':65, 'sd':10, 'sp':20, 'weight':11, 'ability': 'No Guard', 'type': '', 'skip': ['Pidgeot-Mega']},
     'Pinsirite':{'at':30, 'df':20, 'sa':10, 'sd':20, 'sp':20, 'weight':4, 'ability': 'Aerilate', 'type': 'Flying', 'skip': ['Pinsir-Mega']},
-    'Red Orb':{'at':30, 'df':10, 'sa':50, 'sd':0, 'sp':0, 'weight':49.7, 'ability': 'Desolate Land', 'type': 'Fire', 'skip': ['Groudon-Primal']},
+    'Red Orb':{'at':30, 'df':20, 'sa':50, 'sd':0, 'sp':0, 'weight':49.7, 'ability': 'Desolate Land', 'type': 'Fire', 'skip': ['Groudon-Primal']},
     'Sablenite':{'at':10, 'df':50, 'sa':20, 'sd':50, 'sp':-30, 'weight':150, 'ability': 'Magic Bounce', 'type': '', 'skip': ['Sableye-Mega']},    
     'Salamencite':{'at':10, 'df':50, 'sa':10, 'sd':10, 'sp':20, 'weight':10, 'ability': 'Aerilate', 'type': '', 'skip': ['Salamence-Mega']},
     'Sceptilite':{'at':25, 'df':10, 'sa':40, 'sd':0, 'sp':25, 'weight':3, 'ability': 'Lightning Rod', 'type': 'Dragon', 'skip': ['Sceptile-Mega']},
