@@ -7424,12 +7424,12 @@ delete SM['Pikachu-Belle'];
 delete SM['Pikachu-PhD'];
 delete SM['Pikachu-Pop-Star'];
 delete SM['Pikachu-Libre'];
-
 var SS_PATCH = {
-  'Aegislash-Blade': {bs: {at: 140, sa: 140}},
-  'Aegislash-Both': {bs: {at: 140, df: 140, sa: 140, sd: 140}},
-  'Aegislash-Shield': {bs: {df: 140, sd: 140}},
-  Articuno: {otherFormes: ['Articuno-Galar']},
+    'Aegislash-Blade': { bs: { at: 140, sa: 140 } },
+    'Aegislash-Both': { bs: { at: 140, df: 140, sa: 140, sd: 140 } },
+    'Aegislash-Shield': { bs: { df: 140, sd: 140 } },
+    Articuno: {otherFormes: ['Articuno-Galar']},
+    
   Blastoise: {otherFormes: ['Blastoise-Gmax', 'Blastoise-Mega']},
   Butterfree: {otherFormes: ['Butterfree-Gmax']},
   Charizard: {otherFormes: ['Charizard-Gmax', 'Charizard-Mega-X', 'Charizard-Mega-Y']},
@@ -7440,7 +7440,7 @@ var SS_PATCH = {
   Darumaka: {otherFormes: ['Darumaka-Galar']},
   Eevee: {otherFormes: ['Eevee-Gmax']},
   Equilibra: {bs: {sa: 121}},
-  'Farfetch\u2019d': {otherFormes: ['Farfetch\u2019d-Galar']},
+  'Farfetch\'d': {otherFormes: ['Farfetch\'d-Galar']},
   Garbodor: {otherFormes: ['Garbodor-Gmax']},
   Gengar: {otherFormes: ['Gengar-Gmax', 'Gengar-Mega']},
   Kingler: {otherFormes: ['Kingler-Gmax']},
@@ -7476,13 +7476,6 @@ var SS_PATCH = {
   Yamask: {otherFormes: ['Yamask-Galar']},
   Zapdos: {otherFormes: ['Zapdos-Galar']},
   Zigzagoon: {otherFormes: ['Zigzagoon-Galar']},
-  Alcremie: {
-    types: ['Fairy'],
-    bs: {hp: 65, at: 60, df: 75, sa: 110, sd: 121, sp: 64},
-    weightkg: 0.5,
-    abilities: {0: 'Sweet Veil'},
-    otherFormes: ['Alcremie-Gmax'],
-  },
   'Alcremie-Gmax': {
     types: ['Fairy'],
     bs: {hp: 65, at: 60, df: 75, sa: 110, sd: 121, sp: 64},
@@ -7904,13 +7897,13 @@ var SS_PATCH = {
     abilities: {0: 'Battle Armor'},
     gender: 'N',
   },
-  'Farfetch\u2019d-Galar': {
+  'Farfetch\'d-Galar': {
     types: ['Fighting'],
     bs: {hp: 52, at: 95, df: 55, sa: 58, sd: 62, sp: 55},
     weightkg: 15,
     abilities: {0: 'Steadfast'},
     nfe: true,
-    baseSpecies: 'Farfetch\u2019d',
+    baseSpecies: 'Farfetch\'d',
   },
   Flapple: {
     types: ['Grass', 'Dragon'],
@@ -8365,7 +8358,7 @@ var SS_PATCH = {
     baseSpecies: 'Sinistea',
     gender: 'N',
   },
-  'Sirfetch\u2019d': {
+  'Sirfetch\'d': {
     types: ['Fighting'],
     bs: {hp: 62, at: 135, df: 95, sa: 68, sd: 82, sp: 65},
     weightkg: 117,
@@ -8632,9 +8625,7 @@ var SS_PATCH = {
     baseSpecies: 'Zigzagoon',
   },
 };
-
-var SS = extend(true, {}, SM, SS_PATCH);
-
+var SS = util_1.extend(true, {}, SM, SS_PATCH);
 delete SS['Pikachu-Starter'];
 delete SS['Eevee-Starter'];
 exports.SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS];
