@@ -458,7 +458,7 @@ var SM = XY.filter(function (i) { return i !== 'Old Amber'; }).concat([
     'Water Memory',
     'Waterium Z',
 ]);
-var SS = SM.concat([
+const SS = SM.concat([
     'Berry Sweet',
     'Blunder Policy',
     'Chipped Pot',
@@ -470,6 +470,8 @@ var SS = SM.concat([
     'Fossilized Dino',
     'Fossilized Drake',
     'Fossilized Fish',
+    'Galarica Cuff',
+    'Galarica Wreath',
     'Heavy-Duty Boots',
     'Leek',
     'Love Sweet',
