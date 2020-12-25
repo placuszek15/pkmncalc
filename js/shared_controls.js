@@ -253,6 +253,7 @@ function autoUpdateStats(p, item) {
             // pokeObj.find(".weight").val(pokemon.w);
 		    // pokeObj.find(".type2").val(pokemon.t2);
 			pokeObj.find(".type2").val(pokemon.types[1]);
+            abilityObj.val(pokemon.ability);
         } 
         calcHP(pokeObj);
         calcStats(pokeObj);
