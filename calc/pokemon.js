@@ -117,8 +117,7 @@ var Pokemon = (function () {
         });
     };
     Pokemon.prototype.calcStat = function (gen, stat) {
-        return 42;
-        // return stats_1.Stats.calcStat(gen, stat, this.species.baseStats[stat], this.ivs[stat], this.evs[stat], this.level, this.nature);
+        return stats_1.Stats.calcStat(gen, stat, this.species.baseStats[stat], this.ivs[stat], this.evs[stat], this.level, this.nature);
     };
     Pokemon.getForme = function (gen, speciesName, item, moveName) {
         var species = gen.species.get(util_1.toID(speciesName));
