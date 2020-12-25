@@ -4,6 +4,58 @@ var util_1 = require("../util");
 var items_1 = require("../items");
 var result_1 = require("../result");
 var util_2 = require("./util");
+
+// var megaDelta = {
+//     'Abomasite':{'at':40, 'df':30, 'sa':40, 'sd':20, 'sp':-30, 'weight':49.5, 'ability': 'Snow Warning', 'type': '', 'skip': ['Abomasnow-Mega']},
+//     'Absolite':{'at':20, 'df':0, 'sa':40, 'sd':0, 'sp':40, 'weight':2, 'ability': 'Magic Bounce', 'type': '', 'skip': ['Absol-Mega']},
+//     'Aerodactylite':{'at':30, 'df':20, 'sa':10, 'sd':20, 'sp':20, 'weight':20, 'ability': 'Tough Claws', 'type': '', 'skip': ['Aerodactyl-Mega']},
+//     'Aggronite':{'at':30, 'df':50, 'sa':0, 'sd':20, 'sp':00, 'weight':35, 'ability': 'Filter', 'type': 'Steel', 'skip': ['Aggron-Mega']},
+//     'Alakazite':{'at':0, 'df':20, 'sa':40, 'sd':10, 'sp':30, 'weight':0, 'ability': 'Trace', 'type': '', 'skip': ['Alakazam-Mega']},
+//     'Altarianite':{'at':40, 'df':20, 'sa':40, 'sd':0, 'sp':0, 'weight':0, 'ability': 'Pixilate', 'type': 'Fairy', 'skip': ['Altaria-Mega']},
+//     'Ampharosite':{'at':20, 'df':20, 'sa':50, 'sd':20, 'sp':-10, 'weight':0, 'ability': 'Mold Breaker', 'type': 'Dragon', 'skip': ['Ampharos-Mega']},
+//     'Audinite':{'at':0, 'df':40, 'sa':20, 'sd':40, 'sp':0, 'weight':1, 'ability': 'Healer', 'type': 'Fairy', 'skip': ['Audino-Mega']},
+//     'Banettite':{'at':50, 'df':10, 'sa':10, 'sd':20, 'sp':10, 'weight':0.5, 'ability': 'Prankster', 'type': '', 'skip': ['Banette-Mega']},
+//     'Beedrillite':{'at':60, 'df':0, 'sa':-30, 'sd':0, 'sp':70, 'weight':11, 'ability': 'Adaptability', 'type': '', 'skip': ['Beedrill-Mega']},
+//     'Blastoisinite':{'at':20, 'df':20, 'sa':50, 'sd':10, 'sp':0, 'weight':15.6, 'ability': 'Mega Launcher', 'type': '', 'skip': ['Blastoise-Mega']},
+//     'Blazikenite':{'at':40, 'df':10, 'sa':20, 'sd':10, 'sp':20, 'weight':0, 'ability': 'Speed Boost', 'type': '', 'skip': ['Blaziken-Mega']},
+//     'Blue Orb':{'at':50, 'df':0, 'sa':30, 'sd':20, 'sp':0, 'weight':78, 'ability': 'Primordial Sea', 'type': '', 'skip': ['Kyogre-Primal']},
+//     'Cameruptite':{'at':20, 'df':30, 'sa':40, 'sd':30, 'sp':-20, 'weight':100.5, 'ability': 'Sheer Force', 'type': '', 'skip': ['Camerupt-Mega']},
+//     'Charizardite X':{'at':46, 'df':33, 'sa':21, 'sd':0, 'sp':0, 'weight':20, 'ability': 'Tough Claws', 'type': 'Dragon', 'skip': ['Charizard-Mega-X']},
+//     'Charizardite Y':{'at':20, 'df':0, 'sa':50, 'sd':30, 'sp':0, 'weight':10, 'ability': 'Drought', 'type': '', 'skip': ['Charizard-Mega-Y']},
+//     'Diancite':{'at':60, 'df':-40, 'sa':60, 'sd':-40, 'sp':60, 'weight':19, 'ability': 'Magic Bounce', 'type': '', 'skip': ['Diancie-Mega']},
+//     'Galladite':{'at':40, 'df':30, 'sa':0, 'sd':0, 'sp':30, 'weight':4.4, 'ability': 'Inner Focus', 'type': '', 'skip': ['Gallade-Mega']},
+//     'Garchompite':{'at':40, 'df':20, 'sa':40, 'sd':10, 'sp':-10, 'weight':0, 'ability': 'Sand Force', 'type': '', 'skip': ['Garchomp-Mega']},
+//     'Gardevoirite':{'at':20, 'df':0, 'sa':40, 'sd':20, 'sp':20, 'weight':0, 'ability': 'Pixilate', 'type': '', 'skip': ['Gardevoir-Mega']},
+//     'Gengarite':{'at':0, 'df':20, 'sa':40, 'sd':20, 'sp':20, 'weight':0, 'ability': 'Shadow Tag', 'type': '', 'skip': ['Gengar-Mega']},
+//     'Glalitite':{'at':40, 'df':0, 'sa':40, 'sd':0, 'sp':20, 'weight':93.7, 'ability': 'Refrigerate', 'type': '', 'skip': ['Glalie-Mega']},
+//     'Gyaradosite':{'at':30, 'df':30, 'sa':10, 'sd':30, 'sp':0, 'weight':70, 'ability': 'Mold Breaker', 'type': 'Dark', 'skip': ['Gyarados-Mega']},
+//     'Heracronite':{'at':60, 'df':40, 'sa':0, 'sd':10, 'sp':-10, 'weight':8.5, 'ability': 'Skill Link', 'type': '', 'skip': ['Heracross-Mega']},
+//     'Houndoominite':{'at':0, 'df':40, 'sa':30, 'sd':10, 'sp':20, 'weight':14.5, 'ability': 'Solar Power', 'type': '', 'skip': ['Houndoom-Mega']},
+//     'Kangaskhanite':{'at':30, 'df':20, 'sa':20, 'sd':10, 'sp':20, 'weight':20, 'ability': 'Parental Bond', 'type': '', 'skip': ['Kangaskhan-Mega']},
+//     'Latiasite':{'at':20, 'df':30, 'sa':30, 'sd':20, 'sp':0, 'weight':12, 'ability': 'Levitate', 'type': '', 'skip': ['Latias-Mega']},
+//     'Latiosite':{'at':40, 'df':20, 'sa':30, 'sd':10, 'sp':0, 'weight':10, 'ability': 'Levitate', 'type': '', 'skip': ['Latios-Mega']},
+//     'Lopunnite':{'at':60, 'df':10, 'sa':0, 'sd':0, 'sp':30, 'weight':-5, 'ability': 'Scrappy', 'type': 'Fighting', 'skip': ['Lopunny-Mega']},
+//     'Lucarionite':{'at':35, 'df':18, 'sa':25, 'sd':0, 'sp':22, 'weight':3.5, 'ability': 'Adaptability', 'type': '', 'skip': ['Lucario-Mega']},
+//     'Manectite':{'at':0, 'df':20, 'sa':30, 'sd':20, 'sp':30, 'weight':3.8, 'ability': 'Intimidate', 'type': '', 'skip': ['Manectric-Mega']},
+//     'Mawilite':{'at':20, 'df':40, 'sa':0, 'sd':40, 'sp':0, 'weight':12, 'ability': 'Huge Power', 'type': '', 'skip': ['Mawile-Mega']},
+//     'Medichamite':{'at':40, 'df':10, 'sa':20, 'sd':10, 'sp':20, 'weight':0, 'ability': 'Pure Power', 'type': '', 'skip': ['Medicham-Mega']},
+//     'Metagrossite':{'at':10, 'df':20, 'sa':10, 'sd':20, 'sp':40, 'weight':392.9, 'ability': 'Tough Claws', 'type': '', 'skip': ['Metagross-Mega']},
+//     'Mewtwonite X':{'at':80, 'df':10, 'sa':0, 'sd':10, 'sp':0, 'weight':5, 'ability': 'Steadfast', 'type': 'Fighting', 'skip': ['Mewtwo-Mega-X']},
+//     'Mewtwonite Y':{'at':40, 'df':-20, 'sa':40, 'sd':30, 'sp':10, 'weight':-89, 'ability': 'Insomnia', 'type': '', 'skip': ['Mewtwo-Mega-Y']},
+//     'Pidgeotite':{'at':0, 'df':5, 'sa':65, 'sd':10, 'sp':20, 'weight':11, 'ability': 'No Guard', 'type': '', 'skip': ['Pidgeot-Mega']},
+//     'Pinsirite':{'at':30, 'df':20, 'sa':10, 'sd':20, 'sp':20, 'weight':4, 'ability': 'Aerilate', 'type': 'Flying', 'skip': ['Pinsir-Mega']},
+//     'Red Orb':{'at':30, 'df':20, 'sa':50, 'sd':0, 'sp':0, 'weight':49.7, 'ability': 'Desolate Land', 'type': 'Fire', 'skip': ['Groudon-Primal']},
+//     'Sablenite':{'at':10, 'df':50, 'sa':20, 'sd':50, 'sp':-30, 'weight':150, 'ability': 'Magic Bounce', 'type': '', 'skip': ['Sableye-Mega']},    
+//     'Salamencite':{'at':10, 'df':50, 'sa':10, 'sd':10, 'sp':20, 'weight':10, 'ability': 'Aerilate', 'type': '', 'skip': ['Salamence-Mega']},
+//     'Sceptilite':{'at':25, 'df':10, 'sa':40, 'sd':0, 'sp':25, 'weight':3, 'ability': 'Lightning Rod', 'type': 'Dragon', 'skip': ['Sceptile-Mega']},
+//     'Scizorite':{'at':20, 'df':40, 'sa':10, 'sd':20, 'sp':10, 'weight':7, 'ability': 'Technician', 'type': '', 'skip': ['Scizor-Mega']},
+//     'Sharpedonite':{'at':20, 'df':30, 'sa':15, 'sd':25, 'sp':10, 'weight':41.5, 'ability': 'Strong Jaw', 'type': '', 'skip': ['Sharpedo-Mega']},
+//     'Slowbronite':{'at':0, 'df':70, 'sa':30, 'sd':0, 'sp':0, 'weight':31.5, 'ability': 'Shell Armor', 'type': '', 'skip': ['Slowbro-Mega']},
+//     'Steelixite':{'at':40, 'df':30, 'sa':0, 'sd':30, 'sp':0, 'weight':340, 'ability': 'Sand Force', 'type': '', 'skip': ['Steelix-Mega']},
+//     'Swampertite':{'at':40, 'df':20, 'sa':10, 'sd':20, 'sp':10, 'weight':20.1, 'ability': 'Swift Swim', 'type': '', 'skip': ['Swampert-Mega']},
+//     'Tyranitarite':{'at':30, 'df':40, 'sa':0, 'sd':20, 'sp':10, 'weight':53, 'ability': 'Sand Stream', 'type': '', 'skip': ['Tyranitar-Mega']},
+//     'Venusaurite':{'at':18, 'df':40, 'sa':22, 'sd':20, 'sp':0, 'weight':55.5, 'ability': 'Thick Fat', 'type': '', 'skip': ['Venusaur-Mega']},
+// };
 function calculateSMSS(gen, attacker, defender, move, field) {
     var _a;
     util_2.checkAirLock(attacker, field);
@@ -188,7 +240,7 @@ function calculateSMSS(gen, attacker, defender, move, field) {
         return result;
     }
     if ((move.named('Sky Drop') &&
-        (defender.hasType('Flying') || defender.weightkg >= 200 || field.isGravity)) ||
+        (defender.hasType('Flying') || totalWeight(defender) >= 200 || field.isGravity)) ||
         (move.named('Synchronoise') && !defender.hasType(attacker.types[0]) &&
             (!attacker.types[1] || !defender.hasType(attacker.types[1]))) ||
         (move.named('Dream Eater') && !(defender.hasStatus('slp') || defender.hasAbility('Comatose')))) {
@@ -314,7 +366,7 @@ function calculateSMSS(gen, attacker, defender, move, field) {
             break;
         case 'Low Kick':
         case 'Grass Knot':
-            var w = defender.weightkg * util_2.getWeightFactor(defender);
+            var w = totalWeight(defender) * util_2.getWeightFactor(defender);
             basePower = w >= 200 ? 120 : w >= 100 ? 100 : w >= 50 ? 80 : w >= 25 ? 60 : w >= 10 ? 40 : 20;
             desc.moveBP = basePower;
             break;
@@ -324,8 +376,8 @@ function calculateSMSS(gen, attacker, defender, move, field) {
             break;
         case 'Heavy Slam':
         case 'Heat Crash':
-            var wr = (attacker.weightkg * util_2.getWeightFactor(attacker)) /
-                (defender.weightkg * util_2.getWeightFactor(defender));
+            var wr = (totalWeight(attacker) * util_2.getWeightFactor(attacker)) /
+                (totalWeight(defender) * util_2.getWeightFactor(defender));
             basePower = wr >= 5 ? 120 : wr >= 4 ? 100 : wr >= 3 ? 80 : wr >= 2 ? 60 : 40;
             desc.moveBP = basePower;
             break;
@@ -947,6 +999,12 @@ function calculateSMSS(gen, attacker, defender, move, field) {
     return result;
 }
 exports.calculateSMSS = calculateSMSS;
+
+function totalWeight(pokemon) {
+    if (megaDelta[pokemon.item] && megaDelta[pokemon.item].skip.indexOf(pokemon.name) < 0)
+        return pokemon.weightkg + megaDelta[pokemon.item].weight;
+    return pokemon.weightkg;
+}
 function hasTerrainSeed(pokemon) {
     return pokemon.hasItem('Electric Seed', 'Misty Seed', 'Grassy Seed', 'Psychic Seed');
 }
