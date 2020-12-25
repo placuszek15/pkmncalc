@@ -2694,7 +2694,7 @@ var DPP_PATCH = {
     Yanma: { nfe: true },
     Abomasnow: {
         types: ['Grass', 'Ice'],
-        bs: { hp: 90, at: 92, df: 75, sa: 250, sd: 85, sp: 60 },
+        bs: { hp: 90, at: 92, df: 75, sa: 92, sd: 85, sp: 60 },
         weightkg: 135.5,
         abilities: { 0: 'Snow Warning' }
     },
