@@ -5,6 +5,7 @@ Maldyboy's MnM Damage Calculator based off of:
 https://github.com/smogon/damage-calc
 
 ## Current Known Issues
+- Utility Umbrella doesn't work in weather (problem with main calc)
 
 ## Changelog
 |Date|Change|
