@@ -36,8 +36,8 @@ var Pokemon = (function () {
         for (var _i = 0, STATS_1 = STATS; _i < STATS_1.length; _i++) {
             var stat = STATS_1[_i];
             var val = this.calcStat(gen, stat);
-            this.rawStats[stat] = 42;
-            this.stats[stat] = 42;
+            this.rawStats[stat] = val;
+            this.stats[stat] = val;
         }
         var curHP = options.curHP || options.originalCurHP;
         this.originalCurHP = curHP && curHP <= this.rawStats.hp ? curHP : this.rawStats.hp;
@@ -117,7 +117,8 @@ var Pokemon = (function () {
         });
     };
     Pokemon.prototype.calcStat = function (gen, stat) {
-        return stats_1.Stats.calcStat(gen, stat, this.species.baseStats[stat], this.ivs[stat], this.evs[stat], this.level, this.nature);
+        return 42;
+        // return stats_1.Stats.calcStat(gen, stat, this.species.baseStats[stat], this.ivs[stat], this.evs[stat], this.level, this.nature);
     };
     Pokemon.getForme = function (gen, speciesName, item, moveName) {
         var species = gen.species.get(util_1.toID(speciesName));
