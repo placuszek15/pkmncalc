@@ -149,11 +149,13 @@ $(".sl .dvs").keyup(function () {
 });
 
 $("#p1 .item").bind("keyup change", function() {
-    autoUpdateStats("#p1", $(this).val())
+    autoUpdateStats("#p1", $(this).val());
+	autosetWeather($("#p1 .ability").val(), 0);
 });
 
 $("#p2 .item").bind("keyup change", function() {
-    autoUpdateStats("#p2", $(this).val())
+    autoUpdateStats("#p2", $(this).val());
+	autosetWeather($("#p2 .ability").val(), 0);
 });
 
 var megaDelta = {
@@ -358,22 +360,33 @@ function autosetWeather(ability, i) {
 		lastManualWeather = currentWeather;
 		lastAutoWeather[1 - i] = "";
 	}
+	console.log("ability");
+	console.log(ability);
+	var isStrongWeather = (currentWeather === "Harsh Sunshine") || (currentWeather === "Heavy Rain") || (currentWeather === "Strong Winds");
 	switch (ability) {
 	case "Drought":
-		lastAutoWeather[i] = "Sun";
-		$("#sun").prop("checked", true);
+		if (!isStrongWeather) {
+			lastAutoWeather[i] = "Sun";
+			$("#sun").prop("checked", true);
+		}
 		break;
 	case "Drizzle":
-		lastAutoWeather[i] = "Rain";
-		$("#rain").prop("checked", true);
+		if (!isStrongWeather) {
+			lastAutoWeather[i] = "Rain";
+			$("#rain").prop("checked", true);
+		}
 		break;
 	case "Sand Stream":
-		lastAutoWeather[i] = "Sand";
-		$("#sand").prop("checked", true);
+		if (!isStrongWeather) {
+			lastAutoWeather[i] = "Sand";
+			$("#sand").prop("checked", true);
+		}
 		break;
 	case "Snow Warning":
-		lastAutoWeather[i] = "Hail";
-		$("#hail").prop("checked", true);
+		if (!isStrongWeather) {
+			lastAutoWeather[i] = "Hail";
+			$("#hail").prop("checked", true);
+		}
 		break;
 	case "Desolate Land":
 		lastAutoWeather[i] = "Harsh Sunshine";
