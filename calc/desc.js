@@ -625,6 +625,9 @@ function buildDescription(description, attacker, defender) {
         output += 'burned ';
     }
     output += description.attackerName + ' ';
+    if (megaDelta[attacker.item] && megaDelta[attacker.item].skip.indexOf(description.attackerName) < 0) {
+        output += '@ ' + attacker.item + ' ';
+    }
     if (description.isHelpingHand) {
         output += 'Helping Hand ';
     }
@@ -669,6 +672,9 @@ function buildDescription(description, attacker, defender) {
         output += 'Dynamax ';
     }
     output += description.defenderName;
+    if (megaDelta[defender.item] && megaDelta[defender.item].skip.indexOf(description.defenderName) < 0) {
+        output += ' @ ' + defender.item;
+    }
     if (description.weather && description.terrain) {
     }
     else if (description.weather) {
