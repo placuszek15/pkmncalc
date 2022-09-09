@@ -210,6 +210,15 @@ var megaDelta = {
     'Venusaurite':{'at':18, 'df':40, 'sa':22, 'sd':20, 'sp':0, 'weight':55.5, 'ability': 'Thick Fat', 'type': '', 'skip': ['Venusaur-Mega']},
 };
 
+function scaleifyStat(stat,mult) {
+	return Math.min(Math.floor(stat*mult), 255);
+}
+function calcMult(pokemon) {
+	console.log(pokemon)
+	var bst_scale = pokemon.bs.at + pokemon.bs.df + pokemon.bs.sa + pokemon.bs.sd + pokemon.bs.sp;
+    return (600 - pokemon.bs.hp) / bst_scale        
+
+}
 function autoUpdateStats(p, item) {
     var fullSetName = $(p + " .set-selector .select2-chosen").text();
     if (!fullSetName) return;
@@ -225,10 +234,12 @@ function autoUpdateStats(p, item) {
 	var pokemon = pokedex[pokemonName];
 	console.log("Pokemon");
 	console.log(pokemon);
+	var multiplier = calcMult(pokemon);
+	console.log(multiplier)
     if (pokemon) {
 		if (megaDelta[item] && megaDelta[item].skip.indexOf(pokemonName) < 0) { //change stats based on mega stone
 			for (let i = 1; i < LEGACY_STATS[gen].length; i++) {
-				pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(pokemon.bs[LEGACY_STATS[gen][i]] + megaDelta[item][LEGACY_STATS[gen][i]]);
+				pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(Math.min(Math.floor(multiplier*(pokemon.bs[LEGACY_STATS[gen][i]] + megaDelta[item][LEGACY_STATS[gen][i]])+pokemon.tierAddon),255));
 			}
 			// pokeObj.find(".weight").val(1000);
 			// pokeObj.find(".weightkg").val(500);
@@ -250,7 +261,14 @@ function autoUpdateStats(p, item) {
 		else 
 		{
 			for (let i = 0; i < LEGACY_STATS[gen].length; i++) {
-				pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(pokemon.bs[LEGACY_STATS[gen][i]]);
+				if (i == 0) {
+					pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(pokemon.bs[LEGACY_STATS[gen][i]]);
+				}
+				else {
+					pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(Math.min(Math.floor(multiplier*(pokemon.bs[LEGACY_STATS[gen][i]])+pokemon.tierAddon),255));
+
+				}
+				
 			}
             // pokeObj.find(".weight").val(pokemon.w);
 		    // pokeObj.find(".type2").val(pokemon.t2);
@@ -264,7 +282,7 @@ function autoUpdateStats(p, item) {
 				setSelectValueIfValid(abilityObj, set.ability, abilityFallback);
 			else
             	abilityObj.val(abilityFallback);
-        } 
+        }
         calcHP(pokeObj);
         calcStats(pokeObj);
     }
