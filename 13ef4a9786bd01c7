@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Untitled PokePaste</title>
+		<link rel="stylesheet" href="/css/paste.css">
+		<meta name="robots" content="noindex">
+	</head>
+	<body>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/250-0.png">
+				<img class="img-item" src="/img/items/270.png">
+			</div>
+			<pre>MGLO Attacker (<span class="type-fire">Ho-Oh</span>) @ Life Orb  
+<span class="attr">Ability: </span>Magic Guard  
+<span class="attr">EVs: </span><span class="stat-hp">160 HP</span> / <span class="stat-atk">252 Atk</span> / <span class="stat-spe">96 Spe</span>  
+Adamant Nature  
+<span class="type-fire">-</span> Sacred Fire  
+<span class="type-flying">-</span> Brave Bird  
+<span class="type-ground">-</span> Earthquake  
+<span class="type-flying">-</span> Roost
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/683-0.png">
+				<img class="img-item" src="/img/items/234.png">
+			</div>
+			<pre>Magic Guard Wall (<span class="type-fairy">Aromatisse</span>) @ Leftovers  
+<span class="attr">Ability: </span>Magic Guard  
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-def">252 Def</span> / <span class="stat-spa">4 SpA</span>  
+Bold Nature  
+<span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+<span class="type-fairy">-</span> Moonblast  
+<span class="type-normal">-</span> Wish  
+<span class="type-psychic">-</span> Calm Mind  
+<span class="type-normal">-</span> Protect
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/773-15.png">
+				<img class="img-item" src="/img/items/297.png">
+			</div>
+			<pre>Dragon&#39;s Maw Breaker (<span class="type-dragon">Silvally-Dragon</span>) @ Choice Specs  
+<span class="attr">Ability: </span>Dragon&#39;s Maw  
+<span class="attr">EVs: </span><span class="stat-spa">252 SpA</span> / <span class="stat-spd">4 SpD</span> / <span class="stat-spe">252 Spe</span>  
+Modest Nature  
+<span class="type-dragon">-</span> Draco Meteor  
+<span class="type-fire">-</span> Flamethrower  
+<span class="type-bug">-</span> U-turn  
+<span class="type-steel">-</span> Flash Cannon
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/379-0.png">
+				<img class="img-item" src="/img/items/234.png">
+			</div>
+			<pre>Specially Defensive Wall (<span class="type-steel">Registeel</span>) @ Leftovers  
+<span class="attr">Ability: </span>Regenerator  
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-def">4 Def</span> / <span class="stat-spd">252 SpD</span>  
+Calm Nature  
+<span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+<span class="type-fighting">-</span> Body Press  
+<span class="type-steel">-</span> Iron Defense  
+<span class="type-electric">-</span> Thunder Wave  
+<span class="type-rock">-</span> Stealth Rock
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/801-0.png">
+				<img class="img-item" src="/img/items/640.png">
+			</div>
+			<pre>Assault Vest Pivot (<span class="type-steel">Magearna</span>) @ Assault Vest  
+<span class="attr">Ability: </span>Regenerator  
+<span class="attr">EVs: </span><span class="stat-hp">248 HP</span> / <span class="stat-def">8 Def</span> / <span class="stat-spd">252 SpD</span>  
+Sassy Nature  
+<span class="attr">IVs: </span><span class="stat-spe">0 Spe</span>  
+<span class="type-electric">-</span> Volt Switch  
+<span class="type-fairy">-</span> Dazzling Gleam  
+<span class="type-grass">-</span> Energy Ball  
+<span class="type-steel">-</span> Iron Head
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/593-0.png">
+				<img class="img-item" src="/img/items/234.png">
+			</div>
+			<pre>Magic Bounce Wall (<span class="type-water">Jellicent</span>) @ Leftovers  
+<span class="attr">Ability: </span>Magic Bounce  
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-def">252 Def</span> / <span class="stat-spd">4 SpD</span>  
+Bold Nature  
+<span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+<span class="type-normal">-</span> Recover  
+<span class="type-water">-</span> Scald  
+<span class="type-fire">-</span> Will-O-Wisp  
+<span class="type-dark">-</span> Taunt
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/481-0.png">
+				<img class="img-item" src="/img/items/287.png">
+			</div>
+			<pre>Psychic Surge Attacker (<span class="type-psychic">Mesprit</span>) @ Choice Scarf  
+<span class="attr">Ability: </span>Psychic Surge  
+<span class="attr">EVs: </span><span class="stat-atk">4 Atk</span> / <span class="stat-spa">252 SpA</span> / <span class="stat-spe">252 Spe</span>  
+Hasty Nature  
+<span class="type-bug">-</span> U-turn  
+- Expanding Force  
+<span class="type-dark">-</span> Knock Off  
+<span class="type-psychic">-</span> Healing Wish
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/630-0.png">
+			</div>
+			<pre>Defensive Wall (<span class="type-dark">Mandibuzz</span>) (<span class="gender-f">F</span>) @ Heavy-Duty Boots  
+<span class="attr">Ability: </span>Dauntless Shield  
+<span class="attr">EVs: </span><span class="stat-hp">248 HP</span> / <span class="stat-def">252 Def</span> / <span class="stat-spd">8 SpD</span>  
+Impish Nature  
+<span class="type-dark">-</span> Foul Play  
+<span class="type-bug">-</span> U-turn  
+<span class="type-flying">-</span> Roost  
+<span class="type-flying">-</span> Defog
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/768-0.png">
+				<img class="img-item" src="/img/items/270.png">
+			</div>
+			<pre>Triage Breaker (<span class="type-bug">Golisopod</span>) @ Life Orb  
+<span class="attr">Ability: </span>Triage  
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-atk">252 Atk</span> / <span class="stat-spd">4 SpD</span>  
+Adamant Nature  
+<span class="type-bug">-</span> Leech Life  
+<span class="type-normal">-</span> Swords Dance  
+<span class="type-dark">-</span> Knock Off  
+<span class="type-water">-</span> Aqua Jet
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/773-15.png">
+				<img class="img-item" src="/img/items/640.png">
+			</div>
+			<pre>Assault Vest Pivot (<span class="type-dragon">Silvally-Dragon</span>) @ Assault Vest  
+<span class="attr">Ability: </span>Regenerator  
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-def">4 Def</span> / <span class="stat-spd">252 SpD</span>  
+Calm Nature  
+<span class="type-poison">-</span> Poison Fang  
+<span class="type-bug">-</span> U-turn  
+<span class="type-fire">-</span> Flamethrower  
+<span class="type-dragon">-</span> Draco Meteor
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/717-0.png">
+			</div>
+			<pre>Defensive Pivot (<span class="type-dark">Yveltal</span>) @ Heavy-Duty Boots  
+<span class="attr">Ability: </span>Regenerator  
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-def">252 Def</span> / <span class="stat-spd">4 SpD</span>  
+Impish Nature  
+<span class="type-dark">-</span> Knock Off  
+<span class="type-flying">-</span> Defog  
+<span class="type-flying">-</span> Roost  
+<span class="type-bug">-</span> U-turn
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/171-0.png">
+				<img class="img-item" src="/img/items/640.png">
+			</div>
+			<pre>Assault Vest Pivot (<span class="type-water">Lanturn</span>) @ Assault Vest  
+<span class="attr">Ability: </span>Regenerator  
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-def">4 Def</span> / <span class="stat-spd">252 SpD</span>  
+Calm Nature  
+<span class="attr">IVs: </span><span class="stat-atk">0 Atk</span> / <span class="stat-spe">0 Spe</span>  
+<span class="type-electric">-</span> Volt Switch  
+<span class="type-water">-</span> Scald  
+<span class="type-electric">-</span> Discharge  
+<span class="type-ice">-</span> Ice Beam
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/468-0.png">
+			</div>
+			<pre>Defensive Wall (<span class="type-fairy">Togekiss</span>) @ Heavy-Duty Boots  
+<span class="attr">Ability: </span>Dauntless Shield
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-def">252 Def</span> / <span class="stat-spd">4 SpD</span>  
+Bold Nature  
+<span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+<span class="type-fairy">-</span> Dazzling Gleam  
+<span class="type-flying">-</span> Roost  
+<span class="type-poison">-</span> Toxic  
+<span class="type-fire">-</span> Flamethrower
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/715-0.png">
+				<img class="img-item" src="/img/items/287.png">
+			</div>
+			<pre>Aerilate Attacker (<span class="type-flying">Noivern</span>) @ Choice Scarf  
+<span class="attr">Ability: </span>Aerilate  
+<span class="attr">EVs: </span><span class="stat-def">4 Def</span> / <span class="stat-spa">252 SpA</span> / <span class="stat-spe">252 Spe</span>  
+Timid Nature  
+<span class="type-normal">-</span> Boomburst  
+<span class="type-dark">-</span> Switcheroo  
+<span class="type-bug">-</span> U-turn  
+<span class="type-flying">-</span> Roost
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/475-0.png">
+				<img class="img-item" src="/img/items/220.png">
+			</div>
+			<pre>Tough Claws Attacker (<span class="type-psychic">Gallade</span>) (<span class="gender-m">M</span>) @ Choice Band  
+<span class="attr">Ability: </span>Tough Claws  
+<span class="attr">EVs: </span><span class="stat-atk">252 Atk</span> / <span class="stat-def">4 Def</span> / <span class="stat-spe">252 Spe</span>  
+Jolly Nature  
+<span class="type-fighting">-</span> Close Combat  
+<span class="type-dark">-</span> Knock Off  
+<span class="type-poison">-</span> Poison Jab  
+<span class="type-ghost">-</span> Shadow Sneak
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/483-0.png">
+				<img class="img-item" src="/img/items/135.png">
+			</div>
+			<pre>Adaptability Mixed Attacker (<span class="type-steel">Dialga</span>) @ Adamant Orb  
+<span class="attr">Ability: </span>Adaptability  
+<span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-spa">252 SpA</span> / <span class="stat-spd">4 SpD</span>  
+Mild Nature  
+<span class="type-rock">-</span> Stealth Rock  
+<span class="type-steel">-</span> Heavy Slam  
+<span class="type-dragon">-</span> Draco Meteor  
+<span class="type-ground">-</span> Earth Power
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/892-0.png">
+				<img class="img-item" src="/img/items/220.png">
+			</div>
+			<pre>Sniper Breaker (<span class="type-fighting">Urshifu</span>) @ Choice Band  
+<span class="attr">Ability: </span>Sniper
+<span class="attr">EVs: </span><span class="stat-atk">252 Atk</span> / <span class="stat-spd">4 SpD</span> / <span class="stat-spe">252 Spe</span>  
+Jolly Nature  
+- Wicked Blow  
+<span class="type-bug">-</span> U-turn  
+<span class="type-fighting">-</span> Close Combat  
+<span class="type-steel">-</span> Iron Head
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/467-0.png">
+				<img class="img-item" src="/img/items/297.png">
+			</div>
+			<pre>Desolate Land Attacker (<span class="type-fire">Magmortar</span>) @ Choice Specs  
+<span class="attr">Ability: </span>Desolate Land  
+<span class="attr">EVs: </span><span class="stat-spa">252 SpA</span> / <span class="stat-spd">4 SpD</span> / <span class="stat-spe">252 Spe</span>  
+Timid Nature  
+<span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+<span class="type-normal">-</span> Weather Ball  
+<span class="type-grass">-</span> Solar Beam  
+<span class="type-fire">-</span> Fire Blast  
+<span class="type-electric">-</span> Thunderbolt
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/0-0.png">
+			</div>
+			<pre>Defensive Wall(Diancie) @ Leftovers  
+Ability: Regenerator  
+EVs: 252 HP / 252 Def / 4 SpD  
+Relaxed Nature  
+IVs: 0 Spe  
+- Stealth Rock  
+- Diamond Storm  
+- Body Press  
+- Toxic
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/471-0.png">
+				<img class="img-item" src="/img/items/297.png">
+			</div>
+			<pre>Technician Breaker (<span class="type-ice">Glaceon</span>) @ Choice Specs  
+<span class="attr">Ability: </span>Technician  
+<span class="attr">EVs: </span><span class="stat-hp">12 HP</span> / <span class="stat-spa">252 SpA</span> / <span class="stat-spe">244 Spe</span>  
+Modest Nature  
+<span class="type-ice">-</span> Frost Breath  
+<span class="type-water">-</span> Water Pulse  
+<span class="type-ice">-</span> Freeze-Dry  
+<span class="type-ice">-</span> Ice Shard
+
+</pre>
+		</article>
+		<article>
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/135-0.png">
+				<img class="img-item" src="/img/items/297.png">
+			</div>
+			<pre>Primordial Sea Attacker (<span class="type-electric">Jolteon</span>) @ Choice Specs  
+<span class="attr">Ability: </span>Primordial Sea  
+<span class="attr">EVs: </span><span class="stat-spa">252 SpA</span> / <span class="stat-spd">4 SpD</span> / <span class="stat-spe">252 Spe</span>  
+Timid Nature  
+<span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+<span class="type-normal">-</span> Weather Ball  
+<span class="type-electric">-</span> Thunder  
+<span class="type-electric">-</span> Volt Switch  
+<span class="type-ghost">-</span> Shadow Ball
+
+</pre>
+		</article>
+		<aside>
+			<input id="vgcmode" type="checkbox">
+			<label for="vgcmode">Columns Mode</label> / 
+			<input id="evivmode" type="checkbox">
+			<label for="evivmode">Stat Colours</label> / 
+			<input id="lightmode" type="checkbox">
+			<label for="lightmode">Light Mode</label>
+		</aside>
+		<script src="/js/preferences.js"></script>
+	</body>
+</html>

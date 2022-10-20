@@ -226,31 +226,14 @@ function autoUpdateStats(p, item) {
 	console.log("Pokemon");
 	console.log(pokemon);
     if (pokemon) {
-		if (megaDelta[item] && megaDelta[item].skip.indexOf(pokemonName) < 0) { //change stats based on mega stone
-			for (let i = 1; i < LEGACY_STATS[gen].length; i++) {
-				pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(pokemon.bs[LEGACY_STATS[gen][i]] + megaDelta[item][LEGACY_STATS[gen][i]]);
-			}
-			// pokeObj.find(".weight").val(1000);
-			// pokeObj.find(".weightkg").val(500);
-			// pokeObj.forEach(andyboy);
-			// var andy = pokeObj.keys
-			// while (true)
-			// 	console.log(andy.next().value());
-			// typing
-			if (item === "Aggronite")
-				pokeObj.find(".type2").val("???");
-			else if (megaDelta[item].type) 
-				pokeObj.find(".type2").val(megaDelta[item]['type']);
-			else
-				pokeObj.find(".type2").val(pokemon.types[1]);
-
-			// ability
-            abilityObj.val(megaDelta[item]['ability']);
-		} 
-		else 
-		{
 			for (let i = 0; i < LEGACY_STATS[gen].length; i++) {
-				pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(pokemon.bs[LEGACY_STATS[gen][i]]);
+				if (i == 0) {
+					pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(pokemon.bs[LEGACY_STATS[gen][i]]);
+				}
+				else {
+				  var boost = typeof pokemon.tierAddon == typeof 1 ? pokemon.tierAddon : 40
+					pokeObj.find("." + LEGACY_STATS[gen][i] + " .base").val(Math.min(Math.floor((pokemon.bs[LEGACY_STATS[gen][i]])+boost),255));
+
 			}
             // pokeObj.find(".weight").val(pokemon.w);
 		    // pokeObj.find(".type2").val(pokemon.t2);

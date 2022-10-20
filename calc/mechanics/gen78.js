@@ -66,6 +66,8 @@ function calculateSMSS(gen, attacker, defender, move, field) {
     util_2.checkKlutz(defender);
     util_2.checkSeedBoost(attacker, field);
     util_2.checkSeedBoost(defender, field);
+    util_2.checkDauntlessShield(attacker);
+    util_2.checkDauntlessShield(defender);
     util_2.computeFinalStats(gen, attacker, defender, field, 'def', 'spd', 'spe');
     util_2.checkIntimidate(gen, attacker, defender);
     util_2.checkIntimidate(gen, defender, attacker);
@@ -73,8 +75,6 @@ function calculateSMSS(gen, attacker, defender, move, field) {
     util_2.checkDownload(defender, attacker);
     util_2.checkIntrepidSword(attacker);
     util_2.checkIntrepidSword(defender);
-    util_2.checkDauntlessShield(attacker);
-    util_2.checkDauntlessShield(defender);
     util_2.computeFinalStats(gen, attacker, defender, field, 'atk', 'spa');
     util_2.checkInfiltrator(attacker, field.defenderSide);
     util_2.checkInfiltrator(defender, field.attackerSide);
